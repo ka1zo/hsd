@@ -1,0 +1,27 @@
+[build-system]
+requires = ["scikit-build-core>=0.11.6,<2", "pybind11>=3.0,<4"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "hsd"
+version = "0.1.0"
+description = "HSD — Hybrid Search for Documents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+
+[project.optional-dependencies]
+ml = ["numpy>=1.26,<3", "onnxruntime>=1.22,<2", "tokenizers>=0.21,<1"]
+desktop = ["PySide6-Essentials>=6.8,<7"]
+
+[project.scripts]
+hsd = "hsd.cli:main"
+hsd-desktop = "hsd.desktop:main"
+
+[tool.scikit-build]
+wheel.packages = ["src/hsd"]
+
+[tool.scikit-build.cmake.define]
+HSD_BUILD_PYTHON = true
+BUILD_TESTING = false

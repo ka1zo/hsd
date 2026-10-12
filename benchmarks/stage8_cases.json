@@ -1,0 +1,26 @@
+{
+  "documents": [
+    {"id": "d01", "text": "Маяк подаёт световые сигналы кораблям у берега ночью."},
+    {"id": "d02", "text": "Световая башня на побережье помогает судам ориентироваться в темноте."},
+    {"id": "d03", "text": "Чтобы испечь хлеб, смешайте муку, воду и дрожжи, затем поставьте тесто в духовку."},
+    {"id": "d04", "text": "Python — язык программирования, который часто используют для обработки данных."},
+    {"id": "d05", "text": "A bicycle has two wheels, a handlebar and pedals."},
+    {"id": "d06", "text": "A cycling helmet protects the rider's head during a fall."},
+    {"id": "d07", "text": "SQLCipher encrypts a local document index with a password."},
+    {"id": "d08", "text": "Осадкомер измеряет количество выпавшего дождя."},
+    {"id": "d09", "text": "Кошка спит на диване рядом с окном."},
+    {"id": "d10", "text": "Собака гуляет в парке после дождя."},
+    {"id": "d11", "text": "Кофе заваривают из обжаренных зёрен."},
+    {"id": "d12", "text": "The train arrives at the railway station at noon."}
+  ],
+  "queries": [
+    {"id": "q01", "text": "маяк корабли ночью", "relevant": ["d01", "d02"]},
+    {"id": "q02", "text": "как испечь булку", "relevant": ["d03"]},
+    {"id": "q03", "text": "what protects your head while riding a bike", "relevant": ["d06"]},
+    {"id": "q04", "text": "what secures the search database", "relevant": ["d07"]},
+    {"id": "q05", "text": "чем измеряют количество осадков", "relevant": ["d08"]},
+    {"id": "q06", "text": "домашнее животное отдыхает у окна", "relevant": ["d09"]},
+    {"id": "q07", "text": "when does the rail service reach the platform", "relevant": ["d12"]},
+    {"id": "q08", "text": "напиток из кофейных зерен", "relevant": ["d11"]}
+  ]
+}

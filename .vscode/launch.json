@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "HSD CLI: help",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "hsd",
+      "args": ["--help"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
